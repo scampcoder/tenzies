@@ -1,8 +1,22 @@
 import './App.css';
+import Die from './components/Die';
 
 function App() {
   return (
-    <main>Cool shit to go here</main>
+    <main>
+      <div className='wrapper'>
+        <Die value={1} />
+        <Die value={1} />
+        <Die value={1} />
+        <Die value={1} />
+        <Die value={1} />
+        <Die value={1} />
+        <Die value={1} />
+        <Die value={1} />
+        <Die value={1} />
+        <Die value={1} />
+      </div>
+    </main>
   );
 }
 
