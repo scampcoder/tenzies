@@ -2,7 +2,7 @@ import './App.css';
 
 function App() {
   return (
-    <h1>Cool shit to go here</h1>
+    <main>Cool shit to go here</main>
   );
 }
 
