@@ -8,4 +8,24 @@ main {
     background: #F5F5F5;
     border-radius: 10px;
     height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    display: grid;
+    gap: 20px;
+    grid-template: auto auto / repeat(5, 1fr);
+}
+
+.die {
+    height: 50px;
+    width: 50px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
