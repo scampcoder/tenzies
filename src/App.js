@@ -7,7 +7,7 @@ function App() {
 
   const [dice, setDice] = React.useState(allNewDice())
 
-  const dieElements = dice.map(die => <Die value={die.value} key={die.id} />)
+  const dieElements = dice.map(die => <Die value={die.value} key={die.id} isHeld={die.isHeld} />)
 
   function allNewDice() {
     const newDice = []
