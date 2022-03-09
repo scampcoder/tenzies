@@ -1,5 +1,6 @@
 import './App.css';
 import Die from './components/Die';
+import React from 'react'
 
 function App() {
 
