@@ -6,12 +6,13 @@ function App() {
 
   const [dice, setDice] = React.useState(allNewDice())
 
-  const dieElements = dice.map(die => <Die value={die} />)
+  const dieElements = dice.map(die => <Die value={die.value} />)
 
   function allNewDice() {
     const newDice = []
     for (let i = 0; i < 10; i++) {
-        newDice.push(Math.ceil(Math.random() * 6))
+        const randomNum = Math.ceil(Math.random() * 6);
+        newDice.push({value: randomNum, isHeld: false})
     }
     return newDice
   }
