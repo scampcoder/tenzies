@@ -16,11 +16,16 @@ function App() {
     return newDice
   }
 
+  function rollDice() {
+    setDice(allNewDice())
+  }
+
   return (
     <main>
       <div className='wrapper'>
         {dieElements}
       </div>
+      <button className="roll-dice" onClick={rollDice}>Roll Dice</button>
     </main>
   );
 }
